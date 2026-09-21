@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Віртуальні середовища
+.venv/
+venv/
+env/
+
+# Секрети
+.env
+*.pem
+id_ed25519*
+
+# IDE та ОС
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

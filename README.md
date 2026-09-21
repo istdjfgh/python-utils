@@ -88,3 +88,11 @@ python-utils/
 
 Звіт: [reports/lab02-report.md](reports/lab02-report.md).
 Наступні кроки: [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Посилання для перевірки
+
+- [Реліз v1.0.0](https://github.com/istdjfgh/python-utils/releases/tag/v1.0.0).
+- [Завдання команди](https://github.com/istdjfgh/python-utils/issues).
+- [PR №5: додаткові тести](https://github.com/istdjfgh/python-utils/pull/5):
+  20 тестів у гілці `codex/edge-case-tests`, очікується review.
+- У `main` і початковому релізі — 7 вихідних тестів.

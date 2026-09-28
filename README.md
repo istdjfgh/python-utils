@@ -77,4 +77,4 @@ python-utils/
 - [Релізи](https://github.com/istdjfgh/python-utils/releases): `v1.0.0`, `v1.1.0`.
 - [Завдання команди (Issues)](https://github.com/istdjfgh/python-utils/issues?q=is%3Aissue).
 - [Pull Request з review](https://github.com/istdjfgh/python-utils/pulls?q=is%3Apr).
-- Навчальний конфлікт злиття: Issue #3, PR #10 і PR #13.
+- Навчальний конфлікт злиття: Issue #3, PR #10 і PR #14.

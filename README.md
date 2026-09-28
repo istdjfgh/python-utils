@@ -10,7 +10,7 @@
 | Калькулятор (+ − × ÷ ^) | `utils/calculator.py` | @istdjfgh (team lead) |
 | Конвертер одиниць (довжина, маса, температура, об'єм) | `utils/converter.py` | @and701 |
 | Генератор паролів з оцінкою надійності | `utils/password_generator.py` | @xx1x1x2x |
-| Статистика тексту | `utils/text_stats.py` | модуль шаблону, тести — @and701 (QA) |
+| Статистика тексту | `utils/text_stats.py` | @логін-4-учасника (QA) |
 
 ## Технологічний стек
 
@@ -66,8 +66,9 @@ python-utils/
 | Роль | GitHub | Звіт |
 |------|--------|------|
 | Team lead, калькулятор, релізи | @istdjfgh | [lab02-report.md](reports/lab02-report.md) |
-| Developer + QA, конвертер, review | @and701 | [lab02-report-and701.md](reports/lab02-report-and701.md) |
-| Developer, генератор паролів | @xx1x1x2x | [lab02-report-xx1x1x2x.md](reports/lab02-report-xx1x1x2x.md) |
+| Developer, конвертер, review | @and701 | [lab02-report-and701.md](reports/lab02-report-and701.md) |
+| Developer, генератор паролів, конфлікт злиття | @xx1x1x2x | [lab02-report-xx1x1x2x.md](reports/lab02-report-xx1x1x2x.md) |
+| QA, статистика тексту | @логін-4-учасника | [lab02-report-логін-4-учасника.md](reports/lab02-report-логін-4-учасника.md) |
 
 Базовий код утиліт узято з наданого навчального архіву `python-utils-lab02.zip`.
 Частину коду й документації підготовлено з допомогою ШІ.
@@ -77,4 +78,4 @@ python-utils/
 - [Релізи](https://github.com/istdjfgh/python-utils/releases): `v1.0.0`, `v1.1.0`.
 - [Завдання команди (Issues)](https://github.com/istdjfgh/python-utils/issues?q=is%3Aissue).
 - [Pull Request з review](https://github.com/istdjfgh/python-utils/pulls?q=is%3Apr).
-- Навчальний конфлікт злиття: Issue #3, PR #10 і PR #14.
+- Навчальний конфлікт злиття: Issue #3 — PR #10 та PR, що закриває #3.

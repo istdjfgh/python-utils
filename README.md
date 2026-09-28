@@ -7,10 +7,10 @@
 
 | Модуль | Файл | Відповідальний |
 |--------|------|----------------|
-| Калькулятор (+ − × ÷) | `utils/calculator.py` | Учасник 1 (team lead) |
-| Конвертер одиниць (довжина, маса, температура) | `utils/converter.py` | Учасник 2 |
-| Генератор паролів з оцінкою надійності | `utils/password_generator.py` | Учасник 3 |
-| Статистика тексту | `utils/text_stats.py` | Учасник 4 (QA) |
+| Калькулятор (+ − × ÷ ^) | `utils/calculator.py` | @istdjfgh (team lead) |
+| Конвертер одиниць (довжина, маса, температура, об'єм) | `utils/converter.py` | @and701 |
+| Генератор паролів з оцінкою надійності | `utils/password_generator.py` | @xx1x1x2x |
+| Статистика тексту | `utils/text_stats.py` | модуль шаблону, тести — @and701 (QA) |
 
 ## Технологічний стек
 
@@ -43,10 +43,10 @@ python -m unittest discover -v
 ```text
 python-utils/
 ├── main.py                # меню вибору утиліти
-├── utils/                 # модулі (по одному на учасника)
+├── utils/                 # модулі утиліт
 ├── tests/                 # модульні тести
 ├── docs/                  # документація
-├── reports/               # фактичний стан виконання та звіт
+├── reports/               # звіти учасників
 ├── .github/               # шаблони Issues та Pull Request
 ├── .gitignore
 ├── CHANGELOG.md
@@ -63,36 +63,18 @@ python-utils/
 
 ## Команда
 
-| Роль | Ім'я | GitHub |
-|------|------|--------|
-| Власник репозиторію | GitHub-ідентифікатор | @istdjfgh |
-| Запрошений учасник | GitHub-ідентифікатор | @xx1x1x2x |
+| Роль | GitHub | Звіт |
+|------|--------|------|
+| Team lead, калькулятор, релізи | @istdjfgh | [lab02-report.md](reports/lab02-report.md) |
+| Developer + QA, конвертер, review | @and701 | [lab02-report-and701.md](reports/lab02-report-and701.md) |
+| Developer, генератор паролів | @xx1x1x2x | [lab02-report-xx1x1x2x.md](reports/lab02-report-xx1x1x2x.md) |
 
-Відповідальні «Учасник 1–4» у початковому коді та таблиці модулів — умовні
-ролі наданого навчального шаблону, а не твердження про авторство реальних людей.
-Розподіл роботи погоджується після прийняття запрошення.
-
-## Статус лабораторної
-
-Код імпортовано з наданого архіву `python-utils-lab02.zip`.
-Підготовку репозиторію й документації виконано з допомогою ШІ.
-Ця початкова публікація не є доказом виконання командного code review.
-
-- Код чотирьох утиліт та локальні тести доступні.
-- Запрошення для `xx1x1x2x` надіслано; учасник має прийняти його самостійно.
-- Реальні зміни, Pull Request і review запрошеного учасника ще потрібні.
-- Навчальний конфлікт між двома учасниками ще не виконаний.
-- ПІБ, навчальну групу й особисті висновки необхідно додати автору звіту.
-- За методичкою команда складається з 3–4 осіб; наразі визначено лише два акаунти.
-- Здача роботи №02 у Moodle ще не відбулася.
-
-Звіт: [reports/lab02-report.md](reports/lab02-report.md).
-Наступні кроки: [CONTRIBUTING.md](CONTRIBUTING.md).
+Базовий код утиліт узято з наданого навчального архіву `python-utils-lab02.zip`.
+Частину коду й документації підготовлено з допомогою ШІ.
 
 ## Посилання для перевірки
 
-- [Реліз v1.0.0](https://github.com/istdjfgh/python-utils/releases/tag/v1.0.0).
-- [Завдання команди](https://github.com/istdjfgh/python-utils/issues).
-- [PR №5: додаткові тести](https://github.com/istdjfgh/python-utils/pull/5):
-  20 тестів у гілці `codex/edge-case-tests`, очікується review.
-- У `main` і початковому релізі — 7 вихідних тестів.
+- [Релізи](https://github.com/istdjfgh/python-utils/releases): `v1.0.0`, `v1.1.0`.
+- [Завдання команди (Issues)](https://github.com/istdjfgh/python-utils/issues?q=is%3Aissue).
+- [Pull Request з review](https://github.com/istdjfgh/python-utils/pulls?q=is%3Apr).
+- Навчальний конфлікт злиття: Issue #3, PR #10 і PR #13.

@@ -3,9 +3,12 @@
 import secrets
 import string
 
+AMBIGUOUS = "0O1lI"  # символи, які легко сплутати
+
 
 def generate_password(length: int = 12, use_digits: bool = True,
-                      use_symbols: bool = True) -> str:
+                      use_symbols: bool = True,
+                      exclude_ambiguous: bool = False) -> str:
     """Генерує криптографічно стійкий пароль."""
     if length < 4:
         raise ValueError("Мінімальна довжина пароля — 4 символи")
@@ -14,6 +17,8 @@ def generate_password(length: int = 12, use_digits: bool = True,
         pools.append(string.digits)
     if use_symbols:
         pools.append("!@#$%^&*()-_=+")
+    if exclude_ambiguous:
+        pools = ["".join(c for c in pool if c not in AMBIGUOUS) for pool in pools]
     # Гарантуємо хоча б один символ з кожної групи
     chars = [secrets.choice(pool) for pool in pools]
     alphabet = "".join(pools)
@@ -36,7 +41,8 @@ def password_strength(password: str) -> str:
 def run() -> None:
     try:
         length = int(input("Довжина пароля (за замовчуванням 12): ") or 12)
-        pwd = generate_password(length)
+        exclude = input("Виключити схожі символи? (y/n): ").strip().lower() == "y"
+        pwd = generate_password(length, exclude_ambiguous=exclude)
         print(f"Пароль: {pwd} ({password_strength(pwd)})")
     except ValueError as err:
         print(f"Помилка: {err}")

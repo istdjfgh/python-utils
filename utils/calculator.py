@@ -19,7 +19,14 @@ def divide(a: float, b: float) -> float:
     return a / b
 
 
-OPERATIONS = {"+": add, "-": subtract, "*": multiply, "/": divide}
+def power(a: float, b: float) -> float:
+    result = a ** b
+    if isinstance(result, complex):
+        raise ValueError("Результат не є дійсним числом")
+    return result
+
+
+OPERATIONS = {"+": add, "-": subtract, "*": multiply, "/": divide, "^": power}
 
 
 def calculate(a: float, op: str, b: float) -> float:
@@ -32,8 +39,8 @@ def calculate(a: float, op: str, b: float) -> float:
 def run() -> None:
     try:
         a = float(input("Перше число: "))
-        op = input("Операція (+ - * /): ").strip()
+        op = input("Операція (+ - * / ^): ").strip()
         b = float(input("Друге число: "))
         print(f"Результат: {calculate(a, op, b)}")
-    except (ValueError, ZeroDivisionError) as err:
+    except (ValueError, ZeroDivisionError, OverflowError) as err:
         print(f"Помилка: {err}")
